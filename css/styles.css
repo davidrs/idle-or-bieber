@@ -1,0 +1,203 @@
+html,body {
+	height: 100%;
+	font-size: 14px;
+	width: 100%;	
+}
+
+html {
+	display: table;
+}
+
+.hsRow {
+	width: 290px;
+	height: 26px;
+	font-size: 20px;
+	border-bottom: 1px dotted #444;
+	margin-bottom: 3px;
+}
+
+.hsName {
+	width: 260px;
+	float: left;
+}
+
+.hsScore {
+	float: right;
+}
+
+#scores {
+	margin: 0 10px;
+}
+
+#topMenu {
+	border-bottom: dotted 1px #333;
+	margin: 0 5px 5px 5px;
+	width: 90%;
+	padding: 15px 0;
+}
+
+#topMenu a {
+	font-size: 24px;
+	margin: 0 10px;
+	color: #222;
+	background-color: #ccc;
+	border-radius: 5px;
+	padding: 4px 6px;
+	text-decoration: none;
+}
+
+#about {
+	width: 310px;
+	margin: 0 10px;
+	font-size: 18px;
+}
+
+#tweets {
+	width: 290px;
+	height: 200px;
+	overflow: hidden;
+	font-family: Cabin, Arial, sans-serif;;
+	font-size: 16px;
+}
+
+.btn {
+	width: 120px;
+	height: 120px;
+	float: left;
+	margin: 10px;
+}
+
+#bieber {
+	background: no-repeat url('../img/bieber.png');
+}
+
+#idle {
+	background: no-repeat url('../img/idle.png');
+	margin-left: 40px;
+}
+
+#score {
+	font-family: Lobster Bold, Arial, sans-serif;;
+	font-size: 24px;
+	margin-left: 7px;
+}
+
+#splash {
+	width: 480px;
+	height: 800px;
+	background: url('../img/splash.png');
+	margin: auto;
+}
+
+#nameChange {
+	margin: 20px 5px;
+}
+
+body {
+	background-color: #eee;
+	color: #000;
+	background-image: linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+	background-image: -webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+	background-image: -ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #A7A7A7),
+		color-stop(0.51, #E4E4E4) );
+	display: table-cell;
+	font-family: Cabin, Arial, sans-serif;
+	vertical-align: top;
+}
+
+.app {
+	background-repeat: no-repeat;
+	margin: 0px auto;
+}
+
+.hide {
+	display: none;
+}
+
+@
+keyframes fade {from { opacity:1.0;
+	
+}
+
+50%
+{
+opacity
+:
+ 
+0
+.4
+;
+ 
+}
+to {
+	opacity: 1.0;
+}
+
+}
+@
+-webkit-keyframes fade {from { opacity:1.0;
+	
+}
+
+50%
+{
+opacity
+:
+ 
+0
+.4
+;
+ 
+}
+to {
+	opacity: 1.0;
+}
+
+}
+.blink {
+	animation: fade 3000ms infinite;
+	-webkit-animation: fade 3000ms infinite;
+}
+
+/* portrait */
+/* @media screen and (max-aspect-ratio: 1/1) */
+.app {
+	background-position: center top;
+	height: 100px; /* adds enough room for text */
+	padding: 0px 0px 0px 0px; /* background height - shadow offset */
+}
+
+/* lanscape (when wide enough) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:445px) {
+	.app {
+		background-position: left center;
+		height: 140px; /* height + padding = background image size */
+		padding-left: 170px; /* background width */
+		padding-top: 25px; /* center the text */
+	}
+}
+
+@font-face {
+	font-family: "Lobster Bold";
+	src: url('../fonts/LobsterTwo-Bold.ttf');
+	/* relative path from the css file */
+}
+
+@font-face {
+	font-family: "Lobster";
+	src: url('../fonts/LobsterTwo-Regular.ttf');
+	/* relative path from the css file */
+}
+
+@font-face {
+	font-family: "Cabin";
+	src: url('../fonts/Cabin-Regular.ttf');
+	/* relative path from the css file */
+}
+
+@font-face {
+	font-family: "Cabin Sketch";
+	src: url('../fonts/CabinSketch-Regular.ttf');
+	/* relative path from the css file */
+}

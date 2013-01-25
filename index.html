@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="user-scalable=no" />
+<meta property="og:image" content="http://davidrs.com/ex/idleBieber/img/tile300.png" />
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<title>#IdleNoMore or Bieber</title>
+</head>
+<body>
+
+	<div class="app">
+
+		<div id="topMenu">
+			<a href="index.html">Play</a> <a href="about.html">About</a> <a
+				href="scores.html">Scores</a>
+		</div>
+		<div id="nameChange" class="hide">
+			Name: <input type="text" id="name"></input> <input id="submit"
+				type="button" value="Done!" />
+		</div>
+
+		<div id="score">Score: 0/0</div>
+		<div id="tweets" style="padding: 20px;">Sorry, no internet /
+			data connection available. Please check your settings.</div>
+
+
+		<div id="buttons">
+			<div id="bieber" class="btn"></div>
+			<div id="idle" class="btn"></div>
+		</div>
+
+	</div>	
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/scores.js"></script>
+	<script type="text/javascript" src="js/twitter.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+	<script type="text/javascript">
+		var page = 'play';
+		$(function() {
+			startApp();
+			getScores();
+		});
+	</script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push([ '_setAccount', 'UA-24890659-4' ]);
+		_gaq.push([ '_trackPageview' ]);
+
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+					: 'http://www')
+					+ '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+</body>
+</html>

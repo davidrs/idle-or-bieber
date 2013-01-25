@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<title>Idle Bieber</title>
+</head>
+<body>
+
+	<div class="app">
+		<div id="topMenu">
+			<a href="index.html">Play</a> <a href="about.html">About</a> <a
+				href="scores.html">Scores</a>
+		</div>
+		<div id="scores"></div>
+		<div id="nameChange">
+			Name <input type="text" id="name"></input> <input id="submit"
+				type="button" value="done" />
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/scores.js"></script>
+	<script type="text/javascript" src="js/twitter.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+		var page = "scores";
+
+		$(function() {
+			startApp();
+		});
+	</script>
+</body>
+</html>
