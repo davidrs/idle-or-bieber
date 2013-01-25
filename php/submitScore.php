@@ -25,7 +25,7 @@ $sql = mysql_query("INSERT INTO `tracking`
 		(`id`,`name`, `uid`, `location`, `score`, `DateTime`, `episode`,`event`)
 		VALUES
 		(NULL,'$name', '$uid', 'idleBieber', '$score', NOW(), 'n/a', 'n/a');");
- 
+
 
 if($sql){            //The query returned true - now do whatever you like here.
 	echo 'Your score was saved. Congrats! '.$name;

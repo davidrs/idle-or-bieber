@@ -1,4 +1,5 @@
-﻿//jsonp is REQUIRED if the php files are hosted on a different server.
+﻿//jsonp is the REQUIRED datatype if the php files are hosted on a different server.
+
 function getScores() {
 	console.log("get scores");
 
