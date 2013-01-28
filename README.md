@@ -13,4 +13,5 @@ Technology stack:
 JavaScript  =>  Core code.
 jQuery      =>  Make the game pretty and easy ajax calls.
 Twitter API =>  Retrieve Tweets.
+
 PHP MySQL   =>  Highscore board.
