@@ -1,21 +1,19 @@
-﻿var numberRemaining = 0;
+﻿var filterWords = [ "Justin Bieber", "idle no more", "#idlenomore", "justin", "bieber" ];
+var twitterSearchTerms = [ 'Justin Bieber', '#idlenomore' ];
+
+var numberRemaining = 0;
 var bestScore = 0;
 var score = 0;
 var attempts = 0;
 var allowInput = true;
-var playerName = "z";
+var playerName = "";
 var appID = -12;
 
-var filterWords = [ "Justin Bieber", "idle no more", "#idlenomore", "justin",
-		"bieber" ];
-var twitterSearchTerms = [ 'Justin Bieber', '#idlenomore' ];
 
 function startApp() {
 
-	playerName = window.localStorage.getItem("playerName");
-	console.log('name: ' + playerName);
-
-	bestScore = window.localStorage.getItem("bestScore");
+	getStorageVariables();
+	
 	var nameChange = $('#nameChange');
 
 	if (page == 'play') {
@@ -97,4 +95,12 @@ function playSplashIntro() {
 		$(this).remove();
 	});
 
+}
+
+function getStorageVariables(){
+	playerName = window.localStorage.getItem("playerName");
+	console.log('name loaded: ' + playerName);
+	
+	bestScore = window.localStorage.getItem("bestScore");
+	console.log('score loaded: ' + bestScore);
 }
