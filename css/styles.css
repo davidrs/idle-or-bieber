@@ -8,6 +8,19 @@ html {
 	display: table;
 }
 
+a img{
+border: none;
+}
+
+#socialIcons a{
+	float:left;
+	display:block;
+}
+
+#socialIcons{	
+	height:90px;
+}
+
 .hsRow {
 	width: 290px;
 	height: 26px;

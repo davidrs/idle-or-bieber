@@ -46,7 +46,9 @@ function searchTwitter(query, className) {
             var tweets = $('#tweets');
             //tweets.html('');
             for (res in data['results']) {
-                tweets.append('<div class="tweet '+className+'"> <p>' + data['results'][res]['text'].replace(rgx," ____________ ") + '</p></div><br />');
+				var tweetText=data['results'][res]['text'].replace(rgx," ____________ ");
+				tweetText=tweetText.parseURL();				
+                tweets.append('<div class="tweet '+className+'"> <p>' + tweetText + '</p></div><br />');
 			}
 			numberRemaining--;
 			if(numberRemaining==0){
@@ -79,4 +81,9 @@ function hideAllButFirstTweet(){
 	$('.tweet:not(:first-child)').hide();
 }
 
-
+//create string function to make links clickable			
+String.prototype.parseURL = function() {
+	return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&~\?\/.=]+/g, function(url) {
+		return url.link(url);
+	});
+};
